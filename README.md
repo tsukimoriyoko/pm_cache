@@ -17,3 +17,9 @@ make
 numactl -N 0 ./btree_ycsb 1 6000000
 ```
 同理，绑定numa运行，后边两个参数为线程数和key的数量
+## FP tree
+只有叶结点在PM上
+
+开源复现 https://github.com/liumx10/ICPP-RNTree/blob/master/include/fptree.h
+
+原论文地址：https://wwwdb.inf.tu-dresden.de/misc/papers/2016/Oukid_FPTree.pdf
