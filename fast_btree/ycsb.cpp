@@ -80,7 +80,7 @@ int main(int argc, char* argv[])
     struct timespec start, finish;
     double single_time;
 
-    if((ycsb = fopen("/home/YCSB_DATA2/099/c_6M_16_load","r")) == NULL)
+    if((ycsb = fopen("/home/luochen/perl5/c_6M_16_load","r")) == NULL)
     {
         perror("fail to read");
     }
@@ -112,7 +112,7 @@ int main(int argc, char* argv[])
     /*print B+tree information */
     bt->printAll();
 
-    if((ycsb_read = fopen("/home/YCSB_DATA2/099/c_6M_16_run","r")) == NULL)
+    if((ycsb_read = fopen("/home/luochen/perl5/c_6M_16_run","r")) == NULL)
     {
         perror("fail to read");
     }
